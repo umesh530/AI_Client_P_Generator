@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Client Proposal Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 AI Client Proposal Generator</h1>
+    <form id="proposalForm">
+      <input type="text" id="clientName" placeholder="Client Name" required />
+      <input type="text" id="serviceType" placeholder="Service Type" required />
+      <textarea id="projectDetails" rows="5" placeholder="Project Details" required></textarea>
+      <button type="submit">Generate Proposal</button>
+    </form>
+
+    <div class="output" id="outputBox">
+      <h2>Generated Proposal</h2>
+      <pre id="proposalText">Your proposal will appear here...</pre>
+      <button id="downloadBtn" disabled>⬇️ Download PDF</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
